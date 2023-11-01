@@ -1,0 +1,21 @@
+#header {
+    display: flex;
+    justify-content: space-between;
+}
+
+table {
+    width: 80%;
+    margin: auto;
+    margin-top: 50px;
+}
+
+#space {
+    margin-left: 53em;
+    margin-top: -5%;
+}
+
+.reset {
+    padding-left: 15px;
+    padding-right: 15px;
+    background: whitesmoke;
+}

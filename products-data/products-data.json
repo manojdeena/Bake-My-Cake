@@ -1,0 +1,203 @@
+{
+  "product": [
+    {
+      "id": 1,
+      "itemName": "Berries Summer Cupcakes",
+      "category": "Cake",
+      "description": "Summer Berry Cupcakes - Deliciously moist and fluffy vanilla cupcakes stuffed with summer berries,",
+      "image": "Berries Summer Cupcakes",
+      "price": 150,
+      "unit": "5 piece",
+      "rating": 4.1
+    },
+    {
+      "id": 2,
+      "itemName": "Brownies of Different Flavours",
+      "category": "Brownie",
+      "description": "Brownies are a worldwide-famous cake-like dessert, including mostly chocolate. You may find brownies in thousands of different forms! ",
+      "image": "Brownies Different Flavor",
+      "price": 60,
+      "unit": "1 piece",
+      "rating": 4.5
+    },
+    {
+      "id": 3,
+      "itemName": "Butter Cookies",
+      "category": "Cookies",
+      "description": "Butter cookies (or butter biscuits), also known as Danish biscuits, are cookies originating in Denmark consisting of butter, flour, and sugar.",
+      "image": "Butter Cookies",
+      "price": 100,
+      "unit": "5 piece",
+      "rating": 3.1
+    },
+    {
+      "id": 4,
+      "itemName": "Cherry Jelly Cheesecake",
+      "category": "Cake",
+      "description": "Cheesecake is a sweet dessert consisting of one or more layers. The main, and thickest, layer consists of a mixture of a soft, fresh cheese.",
+      "image": "Cherry Jelly Cheesecake",
+      "price": 250,
+      "unit": "1 piece",
+      "rating": 3.5
+    },
+    {
+      "id": 5,
+      "itemName": "Chocolate Blueberries Cake",
+      "category": "Cake",
+      "description": " Chocolate Blueberry Cake. Author: Lee. This Chocolate Blueberry Cake is made up of a rich chocolate cake, oozing with chocolate chips, surrounded by a gorgeous blueberry frosting.",
+      "image": "Chocolate Blueberries Cake",
+      "price": 300,
+      "unit": "1 KG ",
+      "rating": 4.5
+    },
+    {
+      "id": 6,
+      "itemName": "Chocolate Bonbons",
+      "category": "Cake",
+      "description": "a bite-sized chocolate; an arrangement of different chocolates; a mixture of chocolate and other edible ingredients.",
+      "image": "Chocolate Bonbons",
+      "price": 300,
+      "unit": "1 piece",
+      "rating": 3.5
+    },
+    {
+      "id": 7,
+      "itemName": "Chocolate Cookies",
+      "category": "Cookies",
+      "description": "Generally, the recipe starts with a dough composed of flour, butter, both brown and white sugar, semi-sweet chocolate chips, eggs, and vanilla. Variations on the recipe may add other types of chocolate, as well as additional ingredients such as nuts or oatmeal.",
+      "image": "Chocolate Cookies",
+      "price": 120,
+      "unit": "5 piece",
+      "rating": 4.5
+    },
+    {
+      "id": 8,
+      "itemName": "Chocolate Cupcake",
+      "category": "Cake",
+      "description": "Chocolate cupcakes are the ultimate party food. These are super moist and bursting with rich, chocolaty flavor — and they're so easy to make. Frost these delicious chocolate cupcakes with buttercream or cream cheese frosting, or try royal icing or even whipped cream.",
+      "image": "Chocolate Cupcake",
+      "price": 150,
+      "unit": "1 piece",
+      "rating": 3.5
+    },
+    {
+      "id": 9,
+      "itemName": "Chocolate Summer Berries",
+      "category": "Cake",
+      "description": "Botanically speaking, a berry is a single small fruit that grow from a plants ovary. But that’s botanically speaking, and I'm no botanist.",
+      "image": "Chocolate Summer Berries",
+      "price": 450,
+      "unit": "1 piece",
+      "rating": 4.2
+    },
+    {
+      "id": 10,
+      "itemName": "Classic Cheesecake",
+      "category": "Cake",
+      "description": "Cheesecake is a sweet dessert consisting of one or more layers. The main, and thickest, layer consists of a mixture of a soft, fresh cheese.",
+      "image": "Classic Cheesecake",
+      "price": 350,
+      "unit": "1 piece",
+      "rating": 3.4
+    },
+    {
+      "id": 11,
+      "itemName": "Cookies Cream Cake",
+      "category": "Cake",
+      "description": "Cookies and Cream Cake is a layered chocolate cake with Oreo buttercream and crushed Oreo cookies in between the layers and on top of the cake.",
+      "image": "Cookies Cream Cake",
+      "price": 300,
+      "unit": "1/2 KG",
+      "rating": 4.1
+    },
+    {
+      "id": 12,
+      "itemName": "Easter Cupcakes",
+      "category": "Cake",
+      "description": "Cupcakes are for every occasion, and Easter is no egg-ception! Our roundup of Easter cupcakes is packed with super sweet ideas. From bunny Easter cupcakes to giant carrot pull-apart cakes, here are 12 top ideas for cute cupcakes this Easter. ",
+      "image": "Easter Cupcakes",
+      "price": 200,
+      "unit": "5 piece",
+      "rating": 4.7
+    },
+    {
+      "id": 13,
+      "itemName": "Fruit Cake",
+      "category": "Cake",
+      "description": "Fruitcake. Fruitcake (or fruit cake or fruit bread) is a cake made with candied or dried fruit, nuts, and spices, and optionally soaked in spirits. ",
+      "image": "Fruit Cake",
+      "price": 150,
+      "unit": "1 KG",
+      "rating": 3.5
+    },
+    {
+      "id": 14,
+      "itemName": "Isometric chocolate brownies",
+      "category": "Brownie",
+      "description": "A chocolate brownie, or simply a brownie, is a chocolate baked confection. Brownies come in a variety of forms and may be either fudgy or cakey, depending on their density. Brownies often, but not always, have a glossy 'skin' on their upper crust. ",
+      "image": "Isometric chocolate brownies",
+      "price": 300,
+      "unit": "1 piece",
+      "rating": 4.5
+    },
+    {
+      "id": 15,
+      "itemName": "Monster Theme Cake",
+      "category": "Cake",
+      "description": "",
+      "image": "Monster Theme Cake",
+      "price": 250,
+      "unit": "1 KG",
+      "rating": 3.5
+    },
+    {
+      "id": 16,
+      "itemName": "Muffin Devil Horns",
+      "category": "Cake",
+      "description": "These Adorable Devil Cupcakes are literally the cutest. No matter if you're celebrating the birthday of your “cute little devil” or you're looking for some fun devil cupcakes for Halloween, these chocolate cake cupcakes are going to be so much fun to make!",
+      "image": "Muffin Devil Horns",
+      "price": 450,
+      "unit": "1 piece",
+      "rating": 4
+    },
+    {
+      "id": 17,
+      "itemName": "Muffin Ghost",
+      "category": "Cake",
+      "description": "Cupcake on Halloween. Pumpkin Jack o lantern and ghost. Dessert on Halloween party. Muffin decorated with colored sprinkles, candy, frosting and Icing.",
+      "image": "Muffin Ghost",
+      "price": 350,
+      "unit": "3 piece",
+      "rating": 3.5
+    },
+    {
+      "id": 18,
+      "itemName": "Pumpkin Spice Cupcakes",
+      "category": "Cake",
+      "description": "Soft and moist, these Pumpkin Cupcakes are so delicious! Packed with pumpkin flavor and topped with a delightful cream cheese frosting, these cupcakes are perfect for pumpkin lovers. Perfectly spiced, these cupcakes are made not just with pumpkin pie spice but with pumpkin purée as well.",
+      "image": "Pumpkin Spice Cupcakes",
+      "price": 250,
+      "unit": "3 piece",
+      "rating": 4.3
+    }
+  ],
+  "productRequests": [
+    {
+      "id": 1,
+      "itemName": "Berries Summer Cupcakes",
+      "quantity": 6,
+      "price": 150,
+      "dateOfOrder": "2023-10-28T07:22:43.204Z",
+      "customerName": "Prasad",
+      "customerEmail": "prasad@gmail.com",
+      "customerPhone": "9876543215",
+      "citation": "Happy Bird Day TOM",
+      "doorNo": 22,
+      "street": "kjbdskj",
+      "city": "Chennai",
+      "state": "TamilNadu",
+      "zipCode": "600025",
+      "totalAmount": 900
+    }
+  ]
+}

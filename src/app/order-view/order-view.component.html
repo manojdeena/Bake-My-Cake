@@ -1,0 +1,164 @@
+<section id="product-content">
+
+    <div id="product-detail">
+        <h1>{{product.itemName}}</h1>
+        <img id="image" src="../../assets/images/{{product.image}}.jpg">
+
+        <p>{{product.description}}</p>
+
+    </div>
+    <form #productForm="ngForm" id="product-request">
+        <h1>Book this product</h1>
+        <h2>Product Price : {{product.price}} Rs &nbsp;<span id="per-product"> </span></h2>
+        <span>
+            <h3>Enter your personal details</h3>
+
+        </span>
+
+        <mat-form-field>
+            <mat-label>Order Date</mat-label>
+            <input matInput [matDatepicker]="picker" [(ngModel)]="productRequest.dateOfOrder" [min]="minDate" required>
+            <mat-hint>MM/DD/YYYY</mat-hint>
+            <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+            <mat-datepicker #picker></mat-datepicker>
+        </mat-form-field>
+
+        <mat-form-field>
+            <mat-label>Name</mat-label>
+            <input matInput type="text" required minlength="3" placeholder="Name" pattern="^[a-zA-Z \-\']+"
+                #customerName="ngModel" name="customerName" [(ngModel)]="productRequest.customerName">
+            <mat-error *ngIf="customerName.errors?.['required']">
+                Customer Name is Required
+            </mat-error>
+            <mat-error *ngIf="customerName.errors?.['minlength']">
+                Customer Name Minimum length is 2
+            </mat-error>
+            <mat-error *ngIf="customerName.errors?.['pattern']">
+                Customer Name Shoul be Alphabetic only
+            </mat-error>
+        </mat-form-field>
+
+        <mat-form-field>
+            <mat-label>Email</mat-label>
+            <input matInput type="email" required pattern="^[a-zA-Z_.+-]+[a-zA-Z0-9_.+-]+@[a-zA-Z-]+\.[a-zA-Z-.]+$"
+                placeholder="Email" name="customerEmail" [(ngModel)]="productRequest.customerEmail"
+                #customerEmail="ngModel">
+            <!-- <mat-hint> EmailSHould Contain Alphabets,Numeric,Symbols Such as . -</mat-hint> -->
+            <mat-error *ngIf="customerEmail.errors?.['required']">
+                Mail ID is Required
+            </mat-error>
+            <mat-error *ngIf="customerEmail.errors?.['pattern']">
+                Enter Valid Mail ID
+            </mat-error>
+        </mat-form-field>
+
+        <mat-form-field>
+            <mat-label>Phone</mat-label>
+            <input matInput type="phone" required minlength="0" maxlength="10" #customerPhone="ngModel"
+                pattern="^((\\+91-?)|0)?[0-9]{10}$" placeholder="Phone" name="customerPhone"
+                [(ngModel)]="productRequest.customerPhone">
+            <mat-error *ngIf="customerPhone.errors?.['required']">
+                Phone Number is Required
+            </mat-error>
+            <mat-error *ngIf="customerPhone.errors?.['pattern']">
+                enter valid phone number containing 10 digits starting with 7/8/9
+                {{customerPhone.errors?.['pattern']?.requiredLength}}
+            </mat-error>
+        </mat-form-field>
+
+        <mat-form-field>
+            <mat-label>Door No</mat-label>
+            <input matInput type="number" required min="1" placeholder="Door No" name="doorNo" #doorNo="ngModel"
+                [(ngModel)]="productRequest.doorNo">
+            <mat-error *ngIf="doorNo.errors?.['required']">
+                Door Number is Required
+            </mat-error>
+            <mat-error *ngIf="doorNo.errors?.['min']">
+                Minimum Door Number is 1
+            </mat-error>
+
+        </mat-form-field>
+
+        <mat-form-field>
+            <mat-label>Street</mat-label>
+            <input matInput type="text" required minlength="2" placeholder="street" name="street" #street="ngModel"
+                [(ngModel)]="productRequest.street" pattern="^[a-zA-Z \-\']+">
+            <mat-error *ngIf="street.errors?.['required']">
+                street Name is Required
+            </mat-error>
+            <mat-error *ngIf="street.errors?.['minlength']">
+                street Name Minimum length is 2
+            </mat-error>
+            <mat-error *ngIf="street.errors?.['pattern']">
+                street Name Shoul be Alphabetic only
+            </mat-error>
+        </mat-form-field>
+        <mat-form-field>
+            <mat-label>city</mat-label>
+            <input matInput type="text" required placeholder="city" name="city" #city="ngModel" minlength="3"
+                [(ngModel)]="productRequest.city" pattern="^[a-zA-Z \-\']+">
+            <mat-error *ngIf="city.errors?.['required']">
+                city Name is Required
+            </mat-error>
+            <mat-error *ngIf="city.errors?.['minlength']">
+                city Name Minimum length is 3
+            </mat-error>
+            <mat-error *ngIf="city.errors?.['pattern']">
+                city Name Shoul be Alphabetic only
+            </mat-error>
+        </mat-form-field>
+
+        <mat-form-field>
+            <mat-label>state</mat-label>
+            <input matInput type="text" required placeholder="state" name="state" #state="ngModel" minlength="3"
+                [(ngModel)]="productRequest.state" pattern="^[a-zA-Z \-\']+">
+            <mat-error *ngIf="state.errors?.['required']">
+                state Name is Required
+            </mat-error>
+            <mat-error *ngIf="state.errors?.['minlength']">
+                state Name Minimum length is 3
+            </mat-error>
+            <mat-error *ngIf="state.errors?.['pattern']">
+                state Name Shoul be Alphabetic only
+            </mat-error>
+        </mat-form-field>
+
+        <mat-form-field>
+            <mat-label>zipCode</mat-label>
+            <input matInput type="text" required minlength="3" maxlength="6" placeholder="Zip Code" name="zipCode"
+                #zipCode="ngModel" pattern="[1-9]{1}[0-9]{5}|[1-9]{1}[0-9]{3}\\s[0-9]{3}"
+                [(ngModel)]="productRequest.zipCode">
+            <mat-error *ngIf="zipCode.errors?.['required']">
+                zipCode is Required
+            </mat-error>
+            <mat-error *ngIf="zipCode.errors?.['pattern']">
+                Enter Valid zipCode number
+            </mat-error>
+        </mat-form-field>
+
+        <mat-form-field>
+            <mat-label>citation</mat-label>
+            <input matInput type="text" placeholder="citation" name="citation" [(ngModel)]="productRequest.citation">
+        </mat-form-field>
+
+        <mat-form-field>
+            <mat-label>quantity</mat-label>
+            <input matInput required type="number" min="1" placeholder="quantity" name="quantity" #quantity="ngModel"
+                [(ngModel)]="productRequest.quantity" (input)="calculateTotalPrice()">
+            <mat-error *ngIf="quantity.errors?.['required']">
+                Quantity Count is Required
+            </mat-error>
+            <mat-error *ngIf="quantity.errors?.['min']">
+                Minimum quantity Should be 1
+            </mat-error>
+            <!-- <mat-error *ngIf="quantity.errors?.['max']">
+                Maximum quantity Should be 10
+            </mat-error> -->
+        </mat-form-field>
+
+        <h2>Total Amount : {{productRequest.totalAmount}} Rs </h2>
+
+        <button mat-flat-button type="submit" color="primary" (click)="makeRequest()"
+            [disabled]="!productForm.valid">Make Request</button>
+    </form>
+</section>

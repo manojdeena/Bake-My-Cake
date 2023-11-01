@@ -1,0 +1,19 @@
+<mat-toolbar color="primary" id="header">
+    <div id="title-block">
+        <h1>Bake My Cake</h1>
+        <p id="para">“Sweets and Tarts: The Most Wonderous Bakery in All of Hearts”</p>
+    </div>
+    <div class="icons">
+        <button mat-icon-button id="icon-1" routerLink="/" aria-label="Example icon-button with share icon">
+            <mat-icon>home</mat-icon>
+        </button>
+        <button mat-icon-button id="icon-2" routerLink="product-requests"
+            aria-label="Example icon-button with share icon" *ngIf="!authService.isLoggedIn">
+            <mat-icon>login</mat-icon>
+        </button>
+        <button mat-icon-button id="icon-3" aria-label="Example icon-button with share icon" routerLink="/"
+            *ngIf="authService.isLoggedIn" (click)="loggedStatus()">
+            <mat-icon>logout</mat-icon>
+        </button>
+    </div>
+</mat-toolbar>

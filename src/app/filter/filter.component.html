@@ -1,0 +1,10 @@
+<div id="space">
+
+    <mat-button-toggle-group [(ngModel)]="filterText">
+        <mat-button-toggle value="cake" (click)="filter()">Cake</mat-button-toggle>
+        <mat-button-toggle value="cookies" (click)="filter()">Cookies</mat-button-toggle>
+        <mat-button-toggle value="brownie" (click)="filter()">Brownies</mat-button-toggle>
+        <!-- <button mat-button class="reset" reset()>Reset</button> -->
+        <mat-button-toggle value="" (click)="filter()">Reset</mat-button-toggle>
+    </mat-button-toggle-group>
+</div>

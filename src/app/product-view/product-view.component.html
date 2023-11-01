@@ -1,0 +1,6 @@
+<app-search  (searchTextEmit)="onSearch($event)"></app-search>
+<app-filter  (filterTextChanged)="filterCake($event)"></app-filter>
+
+<app-product-card class="card" *ngFor="let product of products" [prod]="product">
+
+</app-product-card>

@@ -1,0 +1,21 @@
+.product-card {
+    width: 350px;
+    height: 75%;
+    margin: 30px 10px;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: rgb(136, 168, 195);
+    transition: transform 0.3 ease;
+    border-radius: 10px;   
+    
+}
+
+.product-card:hover {
+    transform: scale(1.03);
+} 
+
+.image {
+
+    border-radius: 10px;
+}
